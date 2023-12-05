@@ -1,0 +1,56 @@
+
+
+
+.box:hover svg{
+     filter: drop-shadow(0.35rem 0.35rem 10px rgba(0, 0, 0, 0.3));
+     stroke: none;
+    
+}
+
+.card:hover{
+    filter: drop-shadow(0.35rem 0.35rem 10px rgba(0, 0, 0, 0.3));
+}
+
+
+.box:hover .icon-image{
+    background-image: linear-gradient( to top right,  #A6D0DD, #2b84ea );
+}
+
+
+.water-wave{
+    position: absolute;
+    z-index: 50;
+    right: 0;
+    bottom: 10px;
+    opacity: 0;
+}
+
+.box:hover .water-wave{
+    opacity: 1;
+}
+
+.box:hover .know-more{
+    color: #a1d2e0;
+}
+
+.companiesList{
+    animation: 15s infinite linear moveCompany;
+}
+
+@keyframes moveCompany {
+    0% {
+        transform:  translateY(0%);
+    }
+
+    100%{
+        transform:  translateY(-50%);
+    }
+
+    0%{
+        transform:  translateY(0%);
+    }
+}
+
+a {
+    cursor: pointer;
+}
